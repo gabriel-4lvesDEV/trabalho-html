@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Bem-vindo ao SAPS</title>
+</head>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <img src="/imagens/Logo SAPS - Trabalho Faculdade.png" id="nav_logo">
+
+            <ul id ="nav_list">
+                <li class="nav-item">
+                    <a href="./index.html">Ínicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./quemsomos.html">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./ajuda.html">Ajuda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./FAQ.html">FAQ</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                <a href="doar.html">Doe aqui!</a>
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id ="mobile-nav-list">
+                <li class="nav-item">
+                    <a href="./index.html">Ínicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./quemsomos.html">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./ajuda.html">Ajuda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./FAQ.html">FAQ</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                <a href="doar.html">Doe aqui!</a>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="form">
+                
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Junte-se a nós!</h1>
+                    </div>
+                </div>
+
+                <form action="https://webhook.site/52f73c81-0ef7-4f40-952c-6fd9d167362c" method="post" class="form">
+                    <div class="input">
+                        <input type="text" id="nome" name="nome" placeholder="Nome da ONG" required>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="email" name="email" placeholder="E-mail para contato" required>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="confirm_email" name="confirm_email" placeholder="Confirme o E-mail" required>
+                    </div>
+                    <div class="input">
+                        <input type="tel" id="numero" name="numero" placeholder="Número de contato" required>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="dinheiro" name="dinheiro" placeholder="R$ 0,00" oninput="formatarMoeda(this)">
+                    </div>
+                    <div class="button">
+                        <button id="submitForm">Doar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 @__alves06
+            </span>
+            <span>SAPS</span>
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
